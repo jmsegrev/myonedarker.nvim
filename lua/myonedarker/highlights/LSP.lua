@@ -1,5 +1,5 @@
-local Config = require "onedarker.config"
-local C = require "onedarker.palette"
+local Config = require "myonedarker.config"
+local C = require "myonedarker.palette"
 
 local LSP = {
   LspDiagnosticsDefaultError = { fg = C.error_red },
@@ -49,7 +49,7 @@ local LSP = {
   TelescopePromptPrefix = { fg = C.purple },
   NvimTreeFolderIcon = { fg = C.blue },
   NvimTreeIndentMarker = { fg = C.gray },
-  NvimTreeNormal = { fg = C.light_gray, bg = C.alt_bg },
+  NvimTreeNormal = { fg = C.fg, bg = C.dark },
   NvimTreeVertSplit = { fg = C.alt_bg, bg = C.alt_bg },
   NvimTreeFolderName = { fg = C.blue },
   NvimTreeOpenedFolderName = { fg = C.cyan, style = "italic" },
@@ -84,8 +84,8 @@ local LSP = {
   BufferInactiveMod = { fg = C.info_yellow, bg = C.alt_bg },
   BufferInactiveSign = { fg = C.gray, bg = C.alt_bg },
   BufferInactiveTarget = { fg = C.red, bg = C.alt_bg, style = "bold" },
-  StatusLine = { fg = C.alt_bg },
-  StatusLineNC = { fg = C.alt_bg },
+  StatusLine = { fg = C.dark },
+  StatusLineNC = { fg = C.bg },
   StatusLineSeparator = { fg = C.alt_bg },
   StatusLineTerm = { fg = C.alt_bg },
   StatusLineTermNC = { fg = C.alt_bg },

@@ -1,7 +1,7 @@
 local M = {}
 
-local Config = require "onedarker.config"
-local C = require "onedarker.palette"
+local Config = require "myonedarker.config"
+local C = require "myonedarker.palette"
 
 local common = {
   Normal = { fg = C.fg, bg = Config.transparent_background and "NONE" or C.bg },
@@ -24,7 +24,7 @@ local common = {
   LineNr = { fg = C.context },
   FloatBorder = { fg = C.gray, bg = C.alt_bg },
   Whitespace = { fg = C.gray },
-  VertSplit = { fg = C.bg, bg = C.fg },
+  VertSplit = { fg = C.bg, bg = C.bg },
   CursorLine = { bg = C.dark },
   CursorColumn = { bg = C.dark },
   ColorColumn = { bg = C.dark },
@@ -96,7 +96,7 @@ local common = {
   Ignore = { fg = C.cyan, bg = C.bg, style = "bold" },
   Todo = { fg = C.red, bg = C.bg, style = "bold" },
   Error = { fg = C.error_red, bg = C.bg, style = "bold" },
-  TabLine = { fg = C.light_gray, bg = C.alt_bg },
+  TabLine = { fg = "#ff0000", bg = C.alt_bg },
   TabLineSel = { fg = C.fg, bg = C.alt_bg },
   TabLineFill = { fg = C.fg, bg = C.alt_bg },
   CmpDocumentation = { fg = C.fg, bg = C.none },
@@ -126,13 +126,13 @@ local function highlight(group, properties)
 end
 
 function M.setup()
-  local Treesitter = require "onedarker.highlights.Treesitter"
-  local markdown = require "onedarker.highlights.markdown"
-  local Whichkey = require "onedarker.highlights.Whichkey"
-  local Notify = require "onedarker.highlights.Notify"
-  local Git = require "onedarker.highlights.Git"
-  local LSP = require "onedarker.highlights.LSP"
-  local Diff = require "onedarker.highlights.Diff"
+  local Treesitter = require "myonedarker.highlights.Treesitter"
+  local markdown = require "myonedarker.highlights.markdown"
+  local Whichkey = require "myonedarker.highlights.Whichkey"
+  local Notify = require "myonedarker.highlights.Notify"
+  local Git = require "myonedarker.highlights.Git"
+  local LSP = require "myonedarker.highlights.LSP"
+  local Diff = require "myonedarker.highlights.Diff"
 
   local skeletons = {
     common,

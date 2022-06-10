@@ -1,14 +1,15 @@
 local colors = {
   none = "NONE",
+  t = "#ffcc33",
   fg = "#abb2bf",
-  bg = "#1f2227",
-  alt_bg = "#282c34",
-  dark = "#282c34",
+  bg = "#111215",
+  alt_bg = "#111215",
+  dark = "#191a1f",
   accent = "#BBBBBB",
   dark_gray = "#2a2f3e",
   fg_gutter = "#353d46",
   context = "#4b5263",
-  popup_back = "#282c34",
+  popup_back = "#111215",
   search_orange = "#613214",
   search_blue = "#5e81ac",
   gray = "#5c6370",
@@ -40,6 +41,7 @@ local colors = {
   diff_delete = "#6e3b40",
   diff_change = "#18344c",
   diff_text = "#265478",
+  black = "#09090B",
 }
 
 return colors
